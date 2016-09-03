@@ -1,0 +1,221 @@
+@import 'https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700';
+@import 'https://fonts.googleapis.com/css?family=Walter+Turncoat';
+@import 'https://fonts.googleapis.com/css?family=Shojumaru';
+@import 'https://fonts.googleapis.com/css?family=Caesar+Dressing';
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  display: inline-block;
+  background: linear-gradient(141deg, #6cc551 0%, #52ad9c 51%, #47624f 75%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-size: 16px;
+}
+
+#name {
+  font-weight: bolder;
+}
+
+div.album-thumbnails {
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.album-thumbnails img {
+  display: inline;
+  border: 2px solid #444545;
+  border-radius: 10px;
+  width: 90%;
+  box-shadow: 0 0 20px #444545;
+}
+
+h1 {
+  color: #444545;
+  text-align: center;
+  font-variant: small-caps;
+  margin-bottom: 1em;
+  font-family: 'Cabin Sketch', cursive;
+  font-weight: 700;
+  font-size: 3em;
+  text-shadow: 0px 0px #396302;
+}
+
+h2 {
+  color: #444545;
+  text-align: center;
+  font-family: 'Caesar Dressing', cursive;
+}
+
+div.preview {
+  opacity: 0.8;
+  padding: 1em 2em 2em;
+}
+
+div.preview:hover {
+  background-color: #c5e0d8;
+  background: linear-gradient(141deg, #6cc551 0%, #52ad9c 51%, #47624f 75%);
+  opacity: 01;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+div.preview:active {
+  max-width: 340px;
+  margin-left: 1.25em;
+  margin-right: 1.25em;
+}
+
+div.container-fluid {
+  margin-top: 5%;
+}
+
+div.album {
+  text-align: center;
+  margin: auto;
+  margin-bottom: 5em;
+}
+
+.album h3 {
+  font-weight: bolder;
+  margin: 2em 0;
+  font-variant: small-caps;
+  font-stretch: extra-expanded;
+  font-family: 'Shojumaru', cursive;
+}
+
+.album img {
+  margin: auto;
+  max-width: 340px;
+  border-radius: 10px;
+  margin-right: 5em;
+  margin-bottom: 2em;
+}
+
+.album img:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px black;
+}
+
+.album p {
+  text-align: justify;
+  text-indent: 2em;
+  border-radius: 10px;
+  padding: 1em;
+  font-family: 'Walter Turncoat', cursive;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+hr {
+  background-color: #447604;
+  height: 2px;
+  width: 50vw;
+  opacity: 0.8;
+  margin-bottom: 2em;
+}
+
+button.back {
+  bottom: 1em;
+  left: 1em;
+  position: fixed;
+  text-align: left;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+button.back:hover {
+  opacity: 0.7;
+  font-weight: 900;
+  font-size: 1.2em;
+}
+
+.bigImage img {
+  width: 50%;
+  border-radius: 20px;
+  box-shadow: 0 0 20px black;
+}
+
+.bigImage {
+  position: relative;
+  box-sizing: border-box;
+  padding-bottom: 2em;
+}
+
+button.close {
+  position: absolute;
+  right: 23%;
+  top: 0;
+  color: #444545;
+  opacity: 1;
+}
+
+h1.navbar-brand {
+  margin: 0;
+  font-size: 1.7em;
+}
+
+h1 a {
+  color: #FFF;
+}
+
+h1 a:hover {
+  font-size: 1.1em;
+  text-decoration: none;
+  color: #FFF;
+}
+
+#navbar ul {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navbar li {
+  flex: 0 1 auto;
+  color: #FFF;
+}
+
+#navbar li:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 2px -2px #FFF;
+}
+
+nav.navbar {
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: 'Caesar Dressing', cursive;
+  font-size: 1.5em;
+}
+
+li.active {
+  box-shadow: 0 4px 2px -2px #FFF;
+}
+
+@media (max-width: 991px) {
+  .bigImage img {
+    width: 90%;
+  }
+  .album img {
+    margin-right: 0;
+    width: 80%
+  }
+  button.close {
+    right: 3%;
+  }
+  .album p {
+    margin: 0 1.5em;
+  }
+  div.container div.preview {
+    padding: 0;
+  }
+  div.preview:active {
+    max-width: 90%;
+    margin-left: 1.25em;
+    margin-right: 1.25em;
+  }
+  div.album-thumbnails {
+    margin-bottom: 1.8em;
+  }
+}
